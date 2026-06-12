@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Alpha Business</title>
+  <meta name="description" content="Neem contact op met Alpha Business in Lisse. Vragen over de cursus, aanmelding of partnerschap? We helpen je graag.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Alpha <span>Business</span></a>
+      <button class="nav__hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="ervaringen.html">Ervaringen</a></li>
+        <li><a href="enablers.html">Partners</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero__label">Kom in contact</p>
+      <h1 class="page-hero__title">Contact</h1>
+      <p class="page-hero__text">
+        Vragen over de cursus, locatie, aanmelding of partnerschap? We horen graag van je.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT BODY -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: contact info -->
+        <div>
+          <p class="section__label">Bereikbaarheid</p>
+          <h2 class="section__title">Hoe kun je ons bereiken?</h2>
+          <p style="color:#4a5568;margin-bottom:2rem">
+            Je kunt ons bereiken via e-mail of via het contactformulier. We reageren zo snel mogelijk, uiterlijk binnen twee werkdagen.
+          </p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📧</div>
+            <div>
+              <div class="contact-info__label">E-mail</div>
+              <div class="contact-info__value">
+                <a href="mailto:h.enthoven@outlook.com">h.enthoven@outlook.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">👤</div>
+            <div>
+              <div class="contact-info__label">Contactpersoon</div>
+              <div class="contact-info__value">Henrike Enthoven</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <div class="contact-info__label">Locatie cursus</div>
+              <div class="contact-info__value">
+                De Loft<br>
+                Heereweg<br>
+                2161 Lisse
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">🕖</div>
+            <div>
+              <div class="contact-info__label">Cursusavonden</div>
+              <div class="contact-info__value">Elke avond 19:00 – 21:30</div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder">
+            <div style="font-size:1.5rem">🗺️</div>
+            <div>De Loft, Heereweg, Lisse</div>
+            <a href="https://maps.google.com/?q=Heereweg+Lisse" target="_blank" rel="noopener" style="color:var(--red);font-size:.85rem;margin-top:.25rem">Bekijk op Google Maps →</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div>
+          <div class="form-card">
+            <h3 class="form-card__title">Stuur ons een bericht</h3>
+            <form data-form="contact" data-success-message="Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.">
+              <div class="form-group">
+                <label for="ct-naam">Naam *</label>
+                <input type="text" id="ct-naam" name="naam" placeholder="Voor- en achternaam" required>
+              </div>
+              <div class="form-group">
+                <label for="ct-email">E-mailadres *</label>
+                <input type="email" id="ct-email" name="email" placeholder="jouw@email.nl" required>
+              </div>
+              <div class="form-group">
+                <label for="ct-tel">Telefoonnummer</label>
+                <input type="tel" id="ct-tel" name="telefoon" placeholder="06 — — — —">
+              </div>
+              <div class="form-group">
+                <label for="ct-onderwerp">Onderwerp *</label>
+                <select id="ct-onderwerp" name="onderwerp" required>
+                  <option value="">— kies een onderwerp —</option>
+                  <option value="aanmelding">Aanmelding cursus</option>
+                  <option value="informatie">Informatie over de cursus</option>
+                  <option value="partnerschap">Partnerschap / enabler worden</option>
+                  <option value="team">Teamlid worden</option>
+                  <option value="media">Media / pers</option>
+                  <option value="anders">Anders</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ct-bericht">Bericht *</label>
+                <textarea id="ct-bericht" name="bericht" placeholder="Stel je vraag of vertel ons wat je bezighoudt…" style="min-height:140px" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--red" style="width:100%">Bericht versturen</button>
+              <p class="form-note">We reageren uiterlijk binnen twee werkdagen. Je gegevens worden alleen gebruikt om je bericht te beantwoorden.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SNELLE LINKS -->
+  <section class="section section--light">
+    <div class="container text-center">
+      <p class="section__label">Direct naar</p>
+      <h2 class="section__title">Veelgestelde vragen</h2>
+      <div class="info-grid" style="margin-top:2rem">
+        <div class="info-block">
+          <div class="info-block__icon">📋</div>
+          <h3 class="info-block__title">Aanmelden</h3>
+          <p class="info-block__text">Schrijf je direct in voor de huidige cursus via het aanmeldformulier op de cursuspagina.</p>
+          <a href="training-detail.html" class="info-block__link">Naar aanmelding →</a>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon">📅</div>
+          <h3 class="info-block__title">Agenda</h3>
+          <p class="info-block__text">Bekijk alle geplande cursussen en data voor de huidige en komende edities.</p>
+          <a href="agenda.html" class="info-block__link">Naar agenda →</a>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon">🤝</div>
+          <h3 class="info-block__title">Partner worden</h3>
+          <p class="info-block__text">Wil je Alpha Business steunen als partner of enabler? Lees meer over de mogelijkheden.</p>
+          <a href="enablers.html" class="info-block__link">Meer over partners →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo">Alpha <span style="color:var(--red)">Business</span></div>
+          <p>Een inspirerende kennismakingscursus met het christelijk geloof voor ondernemers, leiders en professionals.</p>
+          <p style="margin-top:.75rem">📍 De Loft, Heereweg, Lisse</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="ervaringen.html">Ervaringen</a></li>
+            <li><a href="enablers.html">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contactformulier</a></li>
+            <li><a href="mailto:h.enthoven@outlook.com">h.enthoven@outlook.com</a></li>
+            <li><a href="training-detail.html">Aanmelden cursus</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Alpha Business — alphabusiness.nu</span>
+        <span>Organisatie: Henrike Enthoven</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
