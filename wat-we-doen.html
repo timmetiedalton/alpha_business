@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wat we doen — Alpha Business</title>
+  <meta name="description" content="Ontdek wat Alpha Business biedt: een open cursus voor ondernemers, een in-company programma op maat of een inspirerende spreker voor uw evenement.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .offering-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    .offering-card__accent {
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      gap: 0.75rem;
+    }
+    .offering-card__accent .icon {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+    .offering-card__accent .number {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--red);
+      line-height: 1;
+    }
+    .offering-card__accent .label {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+    }
+    .offering-card__body {
+      padding: 2.25rem 2.5rem;
+    }
+    .offering-card__title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+    }
+    .offering-card__subtitle {
+      font-size: 1rem;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .offering-card__text {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+    .offering-card__features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem;
+      margin-bottom: 1.75rem;
+    }
+    .offering-card__features li {
+      font-size: 0.9rem;
+      color: #4a5568;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .offering-card__features li::before {
+      content: '✓';
+      color: var(--red);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    @media (max-width: 700px) {
+      .offering-card { grid-template-columns: 1fr; }
+      .offering-card__accent { flex-direction: row; padding: 1.25rem 1.5rem; justify-content: flex-start; gap: 1rem; }
+      .offering-card__features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Alpha <span>Business</span></a>
+      <button class="nav__hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wat-we-doen.html">Wat we doen</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="ervaringen.html">Ervaringen</a></li>
+        <li><a href="enablers.html">Partners</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero__label">Ons aanbod</p>
+      <h1 class="page-hero__title">Wat we doen</h1>
+      <p class="page-hero__text">
+        Alpha Business biedt meer dan één cursus. Ontdek hoe wij ondernemers, leiders en organisaties kunnen inspireren — in Lisse, bij u op kantoor of als spreker op uw evenement.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- AANBOD -->
+  <section class="section">
+    <div class="container">
+      <p class="section__label">Ons aanbod</p>
+      <h2 class="section__title">Drie manieren om mee te doen</h2>
+      <p class="section__lead">
+        Of u nu op zoek bent naar een persoonlijke ervaring, een programma voor uw team of een inspirerende spreker — Alpha Business heeft een passend aanbod.
+      </p>
+
+      <div style="display:flex;flex-direction:column;gap:2rem">
+
+        <!-- 1. Open cursus -->
+        <div class="offering-card">
+          <div class="offering-card__accent">
+            <span class="number">01</span>
+            <span class="icon">🎓</span>
+            <span class="label">Open cursus</span>
+          </div>
+          <div class="offering-card__body">
+            <h2 class="offering-card__title">Alpha Business cursus</h2>
+            <div class="offering-card__subtitle">Open cursus in Lisse — voor iedereen</div>
+            <p class="offering-card__text">
+              De klassieke Alpha Business cursus is een open serie avonden voor ondernemers, leiders en professionals. In een warme en ontspannen sfeer gaan deelnemers samen in gesprek over geloof, zingeving en leiderschap — zonder verplichtingen, zonder drempel.
+            </p>
+            <p class="offering-card__text">
+              Elke avond begint met een maaltijd, gevolgd door een korte film en een open tafelgesprek. U bepaalt zelf hoe diep u gaat. Er is ook een optioneel weekend voor wie verder wil.
+            </p>
+            <ul class="offering-card__features">
+              <li>Circa 12 avonden + optioneel weekend</li>
+              <li>Locatie: De Loft, Lisse</li>
+              <li>Tijd: 19:00 – 21:30</li>
+              <li>Deelname is gratis</li>
+              <li>Maaltijd inbegrepen</li>
+              <li>Open voor alle achtergronden</li>
+            </ul>
+            <div class="gap-actions">
+              <a href="agenda.html" class="btn btn--red">Bekijk de agenda</a>
+              <a href="contact.html" class="btn btn--outline-red">Meer informatie</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. In-company -->
+        <div class="offering-card">
+          <div class="offering-card__accent" style="background:var(--red)">
+            <span class="number" style="color:rgba(255,255,255,0.3)">02</span>
+            <span class="icon">🏢</span>
+            <span class="label" style="color:rgba(255,255,255,0.75)">In-company</span>
+          </div>
+          <div class="offering-card__body">
+            <h2 class="offering-card__title">Cursus op uw bedrijf</h2>
+            <div class="offering-card__subtitle">Maatwerk voor uw team of organisatie</div>
+            <p class="offering-card__text">
+              Wilt u Alpha Business dichter bij uw medewerkers brengen? Wij verzorgen een op maat gesneden programma op uw eigen locatie. Ideaal voor bedrijven die willen investeren in de persoonlijke groei, verbinding en zingeving van hun medewerkers of leiderschapsteam.
+            </p>
+            <p class="offering-card__text">
+              Het programma wordt afgestemd op de cultuur en wensen van uw organisatie. U kiest het aantal sessies, het tijdstip en de focus van de gesprekken.
+            </p>
+            <ul class="offering-card__features">
+              <li>Volledig op maat ingericht</li>
+              <li>Op uw eigen locatie</li>
+              <li>Flexibel in tijdstip en duur</li>
+              <li>Voor teams van elke grootte</li>
+              <li>Begeleiding door ervaren gespreksleiders</li>
+              <li>Vrijblijvend kennismakingsgesprek</li>
+            </ul>
+            <div class="gap-actions">
+              <a href="contact.html" class="btn btn--red">Vrijblijvend contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Spreker -->
+        <div class="offering-card">
+          <div class="offering-card__accent" style="background:#1a3560">
+            <span class="number" style="color:var(--red)">03</span>
+            <span class="icon">🎤</span>
+            <span class="label">Spreker</span>
+          </div>
+          <div class="offering-card__body">
+            <h2 class="offering-card__title">Spreker optie</h2>
+            <div class="offering-card__subtitle">Inspirerende sprekers voor uw evenement</div>
+            <p class="offering-card__text">
+              Zoekt u een inspirerende spreker voor uw bedrijfsevenement, netwerkbijeenkomst, congres of managementdag? Ons team biedt boeiende presentaties en panelgesprekken over geloof, ondernemen, leiderschap en zingeving — thema's die in het bedrijfsleven steeds relevanter worden.
+            </p>
+            <p class="offering-card__text">
+              De sprekers verbinden persoonlijke ervaringen met praktische inzichten die uw publiek direct kunnen aanspreken en inspireren.
+            </p>
+            <ul class="offering-card__features">
+              <li>Keynote of panelgesprek</li>
+              <li>Duur naar wens (30 min – 2 uur)</li>
+              <li>Thema's op aanvraag</li>
+              <li>Gecombineerd met workshop mogelijk</li>
+              <li>Zowel live als online</li>
+              <li>Vrijblijvend kennismakingsgesprek</li>
+            </ul>
+            <div class="gap-actions">
+              <a href="contact.html" class="btn btn--red">Neem contact op</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VERGELIJKING -->
+  <section class="section section--light">
+    <div class="container">
+      <p class="section__label">Snel overzicht</p>
+      <h2 class="section__title text-center">Wat past bij u?</h2>
+      <p class="section__lead text-center">Een overzicht van de drie opties zodat u snel kunt zien wat het beste bij uw situatie aansluit.</p>
+
+      <div class="info-grid" style="margin-top:0">
+        <div class="info-block">
+          <div class="info-block__icon">🎓</div>
+          <h3 class="info-block__title">Open cursus</h3>
+          <p class="info-block__text">
+            <strong>Voor:</strong> individuele ondernemers, leiders en professionals<br>
+            <strong>Locatie:</strong> De Loft, Lisse<br>
+            <strong>Kosten:</strong> Gratis<br>
+            <strong>Wanneer:</strong> Zie agenda
+          </p>
+          <a href="agenda.html" class="info-block__link">Naar agenda →</a>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon">🏢</div>
+          <h3 class="info-block__title">In-company</h3>
+          <p class="info-block__text">
+            <strong>Voor:</strong> teams, MT's en organisaties<br>
+            <strong>Locatie:</strong> Uw eigen locatie<br>
+            <strong>Kosten:</strong> Op aanvraag<br>
+            <strong>Wanneer:</strong> Flexibel in te plannen
+          </p>
+          <a href="contact.html" class="info-block__link">Meer informatie →</a>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon">🎤</div>
+          <h3 class="info-block__title">Spreker</h3>
+          <p class="info-block__text">
+            <strong>Voor:</strong> evenementen, congressen en bedrijfsdagen<br>
+            <strong>Locatie:</strong> Uw locatie of online<br>
+            <strong>Kosten:</strong> Op aanvraag<br>
+            <strong>Duur:</strong> 30 min tot 2 uur
+          </p>
+          <a href="contact.html" class="info-block__link">Contact opnemen →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS TEASER -->
+  <section class="section section--dark">
+    <div class="container text-center">
+      <p class="section__label">Van deelnemers</p>
+      <h2 class="section__title" style="color:var(--white)">Wat anderen zeggen</h2>
+      <p class="section__lead" style="margin-left:auto;margin-right:auto;color:rgba(255,255,255,0.8)">
+        Honderden ondernemers en professionals gingen u voor. Lees hun ervaringen.
+      </p>
+      <a href="ervaringen.html" class="btn btn--red">Lees ervaringen</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner__title">Interesse? Neem gerust contact op.</h2>
+      <p class="cta-banner__text">Of het nu gaat om deelname aan de open cursus, een in-company programma of een spreker voor uw evenement — we helpen u graag verder.</p>
+      <div class="cta-banner__actions">
+        <a href="agenda.html" class="btn btn--outline">Bekijk de agenda</a>
+        <a href="contact.html" class="btn btn--outline">Contact opnemen</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo">Alpha <span style="color:var(--red)">Business</span></div>
+          <p>Een inspirerende kennismakingscursus met het christelijk geloof voor ondernemers, leiders en professionals.</p>
+          <p style="margin-top:.75rem">📍 De Loft, Heereweg, Lisse</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wat-we-doen.html">Wat we doen</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="ervaringen.html">Ervaringen</a></li>
+            <li><a href="enablers.html">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contactformulier</a></li>
+            <li><a href="wat-we-doen.html">Wat we doen</a></li>
+            <li><a href="agenda.html">Bekijk de agenda</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Alpha Business — alphabusiness.nu</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
