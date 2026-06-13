@@ -599,12 +599,12 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ── Enablers ───────────────────────────────── */
-.enablers-grid {
+.partners-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-.enabler-card {
+.partner-card {
   background: var(--white);
   border-radius: var(--radius);
   padding: 2rem;
@@ -614,13 +614,13 @@ p:last-child { margin-bottom: 0; }
   gap: 1rem;
   transition: transform var(--transition);
 }
-.enabler-card:hover { transform: translateY(-4px); }
-.enabler-card__logo {
+.partner-card:hover { transform: translateY(-4px); }
+.partner-card__logo {
   height: 64px;
   display: flex;
   align-items: center;
 }
-.enabler-card__logo-placeholder {
+.partner-card__logo-placeholder {
   height: 64px;
   width: 160px;
   background: var(--light);
@@ -635,14 +635,14 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.enabler-card__name {
+.partner-card__name {
   font-family: var(--font-heading);
   font-size: 1.3rem;
   color: var(--navy);
   text-transform: uppercase;
 }
-.enabler-card__summary { font-size: 0.95rem; color: #4a5568; }
-.enabler-card__support {
+.partner-card__summary { font-size: 0.95rem; color: #4a5568; }
+.partner-card__support {
   font-size: 0.88rem;
   background: rgba(230,51,41,0.08);
   color: var(--red);
@@ -650,7 +650,7 @@ p:last-child { margin-bottom: 0; }
   border-radius: var(--radius);
   font-weight: 600;
 }
-.enabler-card__support::before { content: '✓  '; }
+.partner-card__support::before { content: '✓  '; }
 
 /* ── Event Detail ───────────────────────────── */
 .event-header {
@@ -945,7 +945,7 @@ p:last-child { margin-bottom: 0; }
   .training-card__badge { padding: 1.5rem; flex-direction: row; gap: 1rem; justify-content: flex-start; }
   .info-grid { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .enablers-grid { grid-template-columns: 1fr; }
+  .partners-grid { grid-template-columns: 1fr; }
   .event-body { grid-template-columns: 1fr; }
   .form-card { position: static; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -960,7 +960,7 @@ p:last-child { margin-bottom: 0; }
   .nav { position: relative; }
   .info-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
-  .enablers-grid { grid-template-columns: 1fr; }
+  .partners-grid { grid-template-columns: 1fr; }
   .agenda-item { grid-template-columns: 70px 1fr; }
   .agenda-item .btn { grid-column: 1 / -1; width: 100%; text-align: center; }
   .dates-list { grid-template-columns: 1fr; }
