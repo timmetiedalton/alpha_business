@@ -778,6 +778,14 @@ p:last-child { margin-bottom: 0; }
   gap: 4rem;
   align-items: start;
 }
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.two-col-grid--start { align-items: start; }
+.two-col-grid--wide-gap { gap: 4rem; }
 .contact-info__item {
   display: flex;
   gap: 1rem;
@@ -978,6 +986,7 @@ p:last-child { margin-bottom: 0; }
   .contact-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
+  .two-col-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .info-grid { grid-template-columns: 1fr; }
