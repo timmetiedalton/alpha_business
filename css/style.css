@@ -487,6 +487,11 @@ p:last-child { margin-bottom: 0; }
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+@media (min-width: 901px) {
+  .team-grid .team-card:last-child:nth-child(3n+1) {
+    grid-column: 2;
+  }
+}
 .team-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -596,7 +601,7 @@ p:last-child { margin-bottom: 0; }
 /* ── Enablers ───────────────────────────────── */
 .enablers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 .enabler-card {
@@ -940,7 +945,7 @@ p:last-child { margin-bottom: 0; }
   .training-card__badge { padding: 1.5rem; flex-direction: row; gap: 1rem; justify-content: flex-start; }
   .info-grid { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .enablers-grid { grid-template-columns: repeat(2, 1fr); }
+  .enablers-grid { grid-template-columns: 1fr; }
   .event-body { grid-template-columns: 1fr; }
   .form-card { position: static; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -957,7 +962,7 @@ p:last-child { margin-bottom: 0; }
   .team-grid { grid-template-columns: 1fr; }
   .enablers-grid { grid-template-columns: 1fr; }
   .agenda-item { grid-template-columns: 70px 1fr; }
-  .agenda-item .btn { display: none; }
+  .agenda-item .btn { grid-column: 1 / -1; width: 100%; text-align: center; }
   .dates-list { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; gap: 2rem; }
   .footer__bottom { flex-direction: column; text-align: center; }
