@@ -620,20 +620,12 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
 }
-.partner-card__logo-placeholder {
-  height: 64px;
-  width: 160px;
-  background: var(--light);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.partner-card__logo img {
+  max-height: 56px;
+  max-width: 180px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 .partner-card__name {
   font-family: var(--font-heading);
