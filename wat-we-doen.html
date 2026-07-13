@@ -1,119 +1,90 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wat we doen — Alpha Business</title>
-  <meta name="description" content="Ontdek wat Alpha Business biedt: een open cursus voor ondernemers, een in-company programma op maat of een inspirerende spreker voor uw evenement.">
-  <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" href="images/favicon-32.png" type="image/png">
-  <link rel="apple-touch-icon" href="images/favicon-180.png">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .offering-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-    }
-    .offering-card__accent {
-      background: var(--navy);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      gap: 0.75rem;
-    }
-    .offering-card__accent .icon {
-      font-size: 2.5rem;
-      line-height: 1;
-    }
-    .offering-card__accent .number {
-      font-family: var(--font-heading);
-      font-size: 3.5rem;
-      font-weight: 800;
-      color: var(--red);
-      line-height: 1;
-    }
-    .offering-card__accent .label {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.65);
-    }
-    .offering-card__body {
-      padding: 2.25rem 2.5rem;
-    }
-    .offering-card__title {
-      font-family: var(--font-heading);
-      font-size: 1.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: var(--navy);
-      margin-bottom: 0.35rem;
-    }
-    .offering-card__subtitle {
-      font-size: 1rem;
-      color: var(--red);
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    .offering-card__text {
-      color: #4a5568;
-      margin-bottom: 1.5rem;
-    }
-    .offering-card__features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.4rem;
-      margin-bottom: 1.75rem;
-    }
-    .offering-card__features li {
-      font-size: 0.9rem;
-      color: #4a5568;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .offering-card__features li::before {
-      content: '✓';
-      color: var(--red);
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-    @media (max-width: 700px) {
-      .offering-card { grid-template-columns: 1fr; }
-      .offering-card__accent { flex-direction: row; padding: 1.25rem 1.5rem; justify-content: flex-start; gap: 1rem; }
-      .offering-card__features { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">Alpha <span>Business</span></a>
-      <button class="nav__hamburger" aria-label="Menu openen">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="wat-we-doen.html">Wat we doen</a></li>
-        <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="ervaringen.html">Ervaringen</a></li>
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="contact.html" class="nav__cta">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
+---
+layout: default
+title: "Wat we doen — Alpha Business"
+description: "Ontdek wat Alpha Business biedt: een open cursus voor ondernemers, een in-company programma op maat of een inspirerende spreker voor uw evenement."
+extra_style: |
+  .offering-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  .offering-card__accent {
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  .offering-card__accent .icon {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .offering-card__accent .number {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--red);
+    line-height: 1;
+  }
+  .offering-card__accent .label {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+  }
+  .offering-card__body {
+    padding: 2.25rem 2.5rem;
+  }
+  .offering-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 0.35rem;
+  }
+  .offering-card__subtitle {
+    font-size: 1rem;
+    color: var(--red);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .offering-card__text {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+  }
+  .offering-card__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    margin-bottom: 1.75rem;
+  }
+  .offering-card__features li {
+    font-size: 0.9rem;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .offering-card__features li::before {
+    content: '✓';
+    color: var(--red);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  @media (max-width: 700px) {
+    .offering-card { grid-template-columns: 1fr; }
+    .offering-card__accent { flex-direction: row; padding: 1.25rem 1.5rem; justify-content: flex-start; gap: 1rem; }
+    .offering-card__features { grid-template-columns: 1fr; }
+  }
+---
   <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
@@ -303,42 +274,3 @@
       </div>
     </div>
   </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <div class="nav__logo">Alpha <span style="color:var(--red)">Business</span></div>
-          <p>Een inspirerende kennismakingscursus met het christelijk geloof voor ondernemers, leiders en professionals.</p>
-          <p style="margin-top:.75rem">📍 De Loft, Heereweg 345, Lisse</p>
-        </div>
-        <div class="footer__col">
-          <h4>Navigatie</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="wat-we-doen.html">Wat we doen</a></li>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="ervaringen.html">Ervaringen</a></li>
-            <li><a href="partners.html">Partners</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="contact.html">Contactformulier</a></li>
-            <li><a href="wat-we-doen.html">Wat we doen</a></li>
-            <li><a href="agenda.html">Bekijk de agenda</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>© 2025 Alpha Business — alphabusiness.nu</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>

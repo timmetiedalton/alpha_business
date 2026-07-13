@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+  {% if page.extra_style %}<style>
+{{ page.extra_style }}
+  </style>{% endif %}
+</head>
+<body>
+
+  {% include nav.html %}
+
+  {{ content }}
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo">Alpha <span style="color:var(--red)">Business</span></div>
+          <p>Een inspirerende kennismakingscursus met het christelijk geloof voor ondernemers, leiders en professionals.</p>
+          <p style="margin-top:.75rem">📍 De Loft, Heereweg 345, Lisse</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wat-we-doen.html">Wat we doen</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="ervaringen.html">Ervaringen</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contactformulier</a></li>
+            <li><a href="wat-we-doen.html">Wat we doen</a></li>
+            <li><a href="agenda.html">Bekijk de agenda</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Alpha Business — alphabusiness.nu</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
