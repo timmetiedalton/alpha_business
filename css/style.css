@@ -110,6 +110,9 @@ p:last-child { margin-bottom: 0; }
   height: 70px;
 }
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 800;
@@ -117,7 +120,28 @@ p:last-child { margin-bottom: 0; }
   color: var(--white);
   letter-spacing: 1px;
 }
-.nav__logo span { color: var(--red); }
+.nav__logo span { color: var(--white); }
+.nav__logo-icon {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.footer__brand .nav__logo-icon { height: 30px; }
+
+/* ── Region strip ───────────────────────────── */
+.region-strip {
+  background: var(--red);
+  color: var(--white);
+  text-align: center;
+  padding: 0.4rem 0;
+}
+.region-strip .container {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
 
 .nav__links {
   display: flex;
